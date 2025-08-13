@@ -1,3 +1,107 @@
-p {
-    position: sticky;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root {
+    --primary-purple1: hsl(260, 100%, 95%);
+    --primary-purple2: hsl(264, 82%, 80%);
+    --primary-purple3: hsl(263, 55%, 52%);
+    --Neutral-white: hsl(0, 0%, 100%);
+    --Neutral-grey1: hsl(214, 17%, 92%);
+    --Neutral-grey2: hsl(0, 0%, 81%);
+    --Neutral-grey3: hsl(224, 10%, 45%);
+    --Neutral-grey4: hsl(217, 19%, 35%);
+    --Neutral-darkblue: hsl(219, 29%, 14%);
+    --Neutral-black: hsl(0, 0%, 7%);
+    --Font-size: 13px;
+    --Font-family: "Barlow Semi Condensed";
+    --Font-weight1: 500;
+    --Font-weight2: 600;
+}
+
+/*Start of section */
+section {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    background-color: #EEE;
+    grid-template-areas: 
+    "Daniel Daniel Daniel Daniel Daniel jon jon jon kira kira kira"
+    "jean jean jean patrick patrick patrick patrick patrick kira kira kira";
+}
+
+.card-1 {
+    grid-area: Daniel;
+}
+.card-2 {
+    grid-area: jon;
+}
+.card-3 {
+    grid-area: jean;
+}
+.card-4 {
+    grid-area: patrick;
+}
+.card-5 {
+    grid-area: kira;
+}
+
+
+
+/* End of section */
+/* start of card */
+.card {
+    /* background-color: teal; */
+    /* line-height: 1.6; */
+    border-radius: 10px;
+}
+
+.Name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card img {
+    border-radius: 50%;
+    height: 30px;
+}
+
+.card-1 {
+    background-color: var(--primary-purple3);
+
+}
+
+.card-2 {
+    background-color: var(--Neutral-grey4);
+
+}
+
+.card-3 {
+    background-color: var(--Neutral-white);
+}
+
+.card-4 {
+    background-color: var(--Neutral-darkblue);
+
+}    
+
+.card-5 {
+    background-color: var(--Neutral-white);
+}
+
+
+.conteneur {
+    padding: 20px;
+}
+/* end of card */
