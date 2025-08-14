@@ -6,8 +6,10 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     height: 100vh;
+    background-color: rgb(96%, 96%, 96%);
+    font-family: var(--Font-family);
 }
 :root {
     --primary-purple1: hsl(260, 100%, 95%);
@@ -28,8 +30,8 @@ body {
 
 /*Start of section */
 section {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     display: grid;
     grid-template-columns: repeat(11, auto);
     grid-template-rows: repeat(2,1fr);
@@ -57,19 +59,75 @@ section {
 }
 
 
-
+@media (max-width: 375px) {
+    section {
+        width: 90%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5,1fr);
+        gap: 20px;
+        background-color: #EEE;
+        grid-template-areas: 
+        "Daniel"
+        "jon"
+        "jean"
+        "patrick"
+        "kira";
+    }
+}
 /* End of section */
 /* start of card */
 .card {
-    /* background-color: teal; */
-    /* line-height: 1.6; */
     border-radius: 10px;
+    box-shadow: 30px 30px 30px 20px var(--Neutral-grey2);
 }
 
 .Name {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+.Name p {
+    font-weight: var(--Font-weight1);
+    font-size: var(--Font-size);
+    line-height: 1.3;
+}
+.Name span {
+    font-weight: var(--Font-weight2);
+    font-size: 1.2em;
+}
+
+.Job-title {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.card-1
+, .card-2
+,.card-4 {
+    color: var(--Neutral-white);
+    font-weight: 600;
+}
+
+.card-1 .Description
+,.card-2 .Description
+,.card-4 .Description {
+    color: var(--Neutral-grey1);
+    font-weight: 500;
+}
+
+.card-3
+,.card-5 {
+    color: var(--Neutral-grey4);
+    font-weight: 600;
+}
+
+.card-3 .Description
+,.card-5 .Description {
+    color: var(--Neutral-grey3);
+    font-weight: 500;
+    line-height: 1.6;
 }
 
 .card img {
@@ -102,6 +160,11 @@ section {
 
 
 .conteneur {
-    padding: 20px;
+    padding: 30px;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
 }
 /* end of card */
