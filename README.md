@@ -3,9 +3,6 @@
 A responsive **testimonials grid section** built with **HTML** and **CSS Grid** as part of a [Frontend Mentor](https://www.frontendmentor.io) challenge.  
 The project focuses on **grid layouts**, **precise positioning**, and **fine UI styling** to match the given design.
 
-## 📌 Live Demo
-[https://aprahemmahmoud.github.io/Testimonials-grid-section/](#)
-
 ## 🛠️ Technologies Used
 - HTML5
 - CSS3 (Grid, Flexbox, Positioning)
