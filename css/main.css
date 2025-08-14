@@ -35,11 +35,12 @@ section {
     display: grid;
     grid-template-columns: repeat(11, auto);
     grid-template-rows: repeat(2,1fr);
-    gap: 20px;
+    gap: 40px;
     background-color: #EEE;
     grid-template-areas: 
     "Daniel Daniel Daniel Daniel Daniel jon jon jon kira kira kira"
     "jean jean jean patrick patrick patrick patrick patrick kira kira kira";
+    z-index: -2;
 }
 
 .card-1 {
@@ -75,6 +76,10 @@ section {
         "patrick"
         "kira";
     }
+
+    .quote {
+        display: none;
+    }
 }
 /* End of section */
 /* start of card */
@@ -99,8 +104,31 @@ section {
 }
 
 .Job-title {
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 1.4;
+}
+
+.card-1 {
+    position: relative;
+    z-index: -1;
+}
+
+.card-1 .Name img  {
+    border: 2px solid var(--primary-purple2);
+}
+
+.quote {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform:translate(-90px, 10px)  scale(1.2);
+    z-index: -1;
+}
+
+
+
+.card-4 img{
+    border: 2px solid var(--primary-purple3);
 }
 
 .card-1
@@ -110,12 +138,17 @@ section {
     font-weight: 600;
 }
 
-.card-1 .Description
-,.card-2 .Description
-,.card-4 .Description {
-    color: var(--Neutral-grey1);
+.card-1 .Description,.card-2 .Description {
+    color: var(--Neutral-grey2);
     font-weight: 500;
 }
+
+
+.card-4 {
+    color: var(--Neutral-grey2);
+    font-weight: 500;
+}
+
 
 .card-3
 ,.card-5 {
@@ -130,7 +163,7 @@ section {
     line-height: 1.6;
 }
 
-.card img {
+.card .Name img {
     border-radius: 50%;
     height: 30px;
 }
@@ -162,7 +195,7 @@ section {
 .conteneur {
     padding: 30px;
     height: 100%;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-flow: column;
     gap: 20px;
