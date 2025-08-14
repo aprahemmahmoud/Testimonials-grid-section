@@ -23,5 +23,3 @@ The project focuses on **grid layouts**, **precise positioning**, and **fine UI 
 - Improved **positioning skills** (`absolute`, `relative`, `z-index`)
 - Enhanced visual design with **box-shadow**
 - Problem-solving with image quality and layering issues
-
-## 📂 Project Structure
